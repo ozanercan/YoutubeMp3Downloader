@@ -1,11 +1,12 @@
-﻿<Window xmlns:UserControls="clr-namespace:WpfUI.Views.UserControls"  x:Name="window" x:Class="WpfUI.MainWindow"
+﻿<Window xmlns:UserControls="clr-namespace:YoutubeMp3Downloader.Views.UserControls"
+        x:Name="window" x:Class="YoutubeMp3Downloader.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfUI"
+        xmlns:local="clr-namespace:YoutubeMp3Downloader"
         mc:Ignorable="d"
-        Title="Youtube Mp3 Downloader" Height="200" Width="600" WindowStyle="None" FontSize="20" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/WpfUI;component/Images/Icos/icon.ico">
+        Title="Youtube Mp3 Downloader" Height="200" Width="600" WindowStyle="None" FontSize="20" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="pack://application:,,,/YoutubeMp3Downloader;component/Images/Icos/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"></RowDefinition>

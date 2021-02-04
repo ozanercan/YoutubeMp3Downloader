@@ -4,8 +4,9 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>Images\Icos\icon.ico</ApplicationIcon>
     <AssemblyName>YoutubeMp3Downloader</AssemblyName>
+    <RootNamespace>WpfUI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

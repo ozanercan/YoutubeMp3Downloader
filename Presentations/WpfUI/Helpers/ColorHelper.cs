@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media;
 
-namespace WpfUI.Helpers
+namespace YoutubeMp3Downloader.Helpers
 {
     public static class ColorHelper
     {

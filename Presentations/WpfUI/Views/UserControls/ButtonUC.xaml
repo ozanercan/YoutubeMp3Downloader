@@ -1,9 +1,9 @@
-﻿<UserControl x:Name="userControl" x:Class="WpfUI.Views.UserControls.ButtonUC"
+﻿<UserControl x:Name="userControl" x:Class="YoutubeMp3Downloader.Views.UserControls.ButtonUC"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfUI.Views.UserControls"
+             xmlns:local="clr-namespace:YoutubeMp3Downloader.Views.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="200" Foreground="#FFEAEAEA" MouseEnter="userControl_MouseEnter" MouseLeave="userControl_MouseLeave" Background="#B2000000" Cursor="Hand">
     <Grid>

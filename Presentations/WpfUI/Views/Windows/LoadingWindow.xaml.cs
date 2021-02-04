@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfUI.Views.Windows
+namespace YoutubeMp3Downloader.Views.Windows
 {
     /// <summary>
     /// Interaction logic for Loading.xaml

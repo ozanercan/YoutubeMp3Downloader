@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Windows.Controls;
 using System.Windows.Media;
-using WpfUI.Helpers;
-namespace WpfUI.Views.UserControls
+using YoutubeMp3Downloader.Helpers;
+namespace YoutubeMp3Downloader.Views.UserControls
 {
     /// <summary>
     /// Interaction logic for ButtonUC.xaml
