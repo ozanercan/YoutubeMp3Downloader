@@ -18,6 +18,8 @@ namespace YoutubeMp3Downloader
             _convertService = new YtDownloadConvertManager();
         }
 
+        LoadingWindow loadingWindow = new LoadingWindow();
+
         private void buttonUC_Close_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Application.Current.Shutdown();
@@ -25,13 +27,19 @@ namespace YoutubeMp3Downloader
 
         private async void buttonUC_Download_PreviewMouseLeftButtonUpAsync(object sender, MouseButtonEventArgs e)
         {
-            string videoId = FindVideoIdByUrl(textBox_VideoURL.Text);
+            if (textBox_VideoURL.Text.IndexOf("youtube") == -1)
+            {
+                MessageBox.Show("Please copy the link as requested. Example\nhttps://www.youtube.com/watch?v=LaQj636PJh0", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else
+            {
+                string videoId = FindVideoIdByUrl(textBox_VideoURL.Text);
 
-            await _convertService.SendToIdAsync(videoId);
+                await _convertService.SendToIdAsync(videoId);
 
-            LoadingWindow loadingWindow = new LoadingWindow();
 
-            loadingWindow.ShowDialog();
+                loadingWindow.ShowDialog();
+            }
         }
 
         private string FindVideoIdByUrl(string url)

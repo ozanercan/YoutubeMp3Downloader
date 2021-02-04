@@ -1,4 +1,5 @@
 ﻿using Core.Helpers;
+using SpeechLib;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,16 +25,22 @@ namespace YoutubeMp3Downloader.Views.Windows
             InitializeComponent();
         }
 
+        SpVoice voice = new SpVoice();
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             try
             {
+                voice.Speak("Music downloading, please wait.", SpeechVoiceSpeakFlags.SVSFDefault);
+
                 Task.Run(() =>
                 {
                     for (; ; )
                     {
                         if (DownloadHelper.DownloadState == DownloadStates.Downloaded)
                         {
+                            voice.Speak("Music downloaded.", SpeechVoiceSpeakFlags.SVSFDefault);
+
                             this.Dispatcher.Invoke(() =>
                             {
                                 this.Close();

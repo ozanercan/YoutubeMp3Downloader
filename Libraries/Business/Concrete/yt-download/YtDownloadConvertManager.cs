@@ -55,7 +55,7 @@ namespace Business.Concrete.yt_download
 
                 var node = htmlDoc.DocumentNode.SelectSingleNode("//title");
 
-                return node.InnerText.Replace("- YouTube", "");
+                return node.InnerText.Replace("- YouTube", "").Trim();
             }
             catch (Exception)
             {

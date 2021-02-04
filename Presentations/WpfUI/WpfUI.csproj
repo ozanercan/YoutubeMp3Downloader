@@ -15,6 +15,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <COMReference Include="SpeechLib.dll">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>5</VersionMajor>
+      <Guid>c866ca3a-32f7-11d2-9602-00c04f8ee628</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="XamlAnimatedGif" Version="1.2.3" />
   </ItemGroup>
 
